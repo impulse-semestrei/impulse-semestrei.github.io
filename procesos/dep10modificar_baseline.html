@@ -1,0 +1,104 @@
+<h3> Propósito </h3>
+<ul>
+    <li>Tener una versión estable del trabajo del proyecto</li>
+    <li>Poder recuperar versiones anteriores</li>
+</ul>
+
+<h3>Criterios de entrada</h3>
+<ul>
+    <li>Solicitud de cambio con los datos adecuados (ver formato en la <a href="https://docs.google.com/document/d/1xD1JtwF3NZRbLXyBYdYoCAJYjsnUezRxDPs5bP9WAAU/edit">guía</a>)</li>
+    <li>Los miembros del CCB que no tengan alguna emergencia deben estar puntuales y presentes de alguna forma</li>
+</ul>
+
+<h3> Tabla de especificación</h3>
+<table>
+    <thead>
+        <tr>
+            <td>
+                <h3>Fase</h3>
+            </td>
+            <td>
+                <h3>Pasos</h3>
+            </td>
+            <td>
+                <h3>P.A</h3>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                1.- Revisión
+            </td>
+            <td>
+                <ul>
+                     <li>Revisar que la solicitud de cambio tenga los datos adecuados</li>
+                     <li>Obtener lista de cambios a realizar</li>
+                        <li>
+                            Por cada elemento de la lista:
+                            <ul>
+                                <li>Comprobar que haya sido probados (si aplica) y aprobados</li>
+                                <li>Revisar que las dependencias entre cambios se hayan resuelto adecuadamente</li>
+                            </ul>
+                        </li>
+                        <li>Comprobar los resultados de las pruebas previas a la integración</li>
+                        <li>Revisar cambios con los stakeholders relevantes si es necesario</li>
+                </ul>
+            </td>
+            <td>
+                CM1.3
+            </td>
+        </tr>
+        <tr>
+            <td>2.- Discusión</td>
+            <td>
+                <ul>
+                    <li>Exponer argumentos a favor y en contra del cambio</li>
+                </ul>
+            </td>
+            <td>CM1.3</td>
+        </tr>
+        <tr>
+            <td>3.- Aceptación</td>
+            <td>
+                    <ul>
+                        <li>Votar el cambio</li>
+                        <li>Si la votación fue mayoritaria, el cambio se aprueba. De lo contrario, se documenta en la solicitud de cambio las razones por las que los cambios se rechazaron y se cambia el status de la solicitud a rechazada</li>
+                    </ul>
+            </td>
+            <td>CM1.3</td>
+        </tr>
+        <tr>
+            <td>4.- Rezalizar el cambio</td>
+            <td>
+                <ul>
+                    <li>Integrar cambios con la línea base</li>
+                    <li>Cambiar el status de la solicitud de cambio a aprobada</li>
+                    <li>Hacer pruebas de regresión</li>
+                </ul>
+            </td>
+            <td>
+                CM1.3
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Resultado</h3>
+<ul>
+    <li>Cambios en la baseline</li>
+    <li>Registro de la aceptación / rechazo del cambio (status del pull request en git)</li>
+</ul>
+
+
+<h3>Evidencias</h3>
+<ul>
+    <li>
+        Cambios en la baseline y status de las peticiones
+        <ul>
+            <li><a href="https://github.com/impulse-semestrei/Voyager/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed">Vostok</a></li>
+            <li><a href="https://github.com/impulse-semestrei/Vostok/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed">Voyager</a></li>
+            <li><a href="https://github.com/impulse-semestrei/impulse-semestrei.github.io/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed">Impulse</a></li>
+        </ul>
+    </li>
+</ul>
