@@ -3,14 +3,14 @@
 <ul>
     <li>Detectar defectos en la solución</li>
     <li>Tener la última solución desarrollada corriendo en un ambiente parecido al de producción</li>
-</ul> 
+</ul>
 
 <h3>Criterios de entrada</h3>
 <ul>
     <li>User Story que haya pasado por el proceso de implementación</li>
     <li>Tener total conocimineto de la <a href="https://docs.google.com/document/d/1gyKwSD_gJw6pyD6CO4KOLy5PNqBz8qdW298Mjaj5qaY/edit" target="blank">Política de Obtención de Datos.</a></li>
-</ul> 
-    
+</ul>
+
 <h4>Guías para seguir el proceso:</h4>
 <ul>
     <li><a href="https://docs.google.com/document/d/1TvyVQnKObaS42SX9yGX10v8xv2D6_7UFNEYf61ri9Tw/edit?usp=sharing" target="_blank">Guía para acceder y preparar el ambiente de producción</a></li>
@@ -39,6 +39,7 @@
             </td>
             <td>
                 <ul>
+                    <li>Realiza un merge de la rama develop a la rama test en el repositorio del proyecto</li>
                     <li>Acceder al ambiente de pruebas</li>
                     <li>Desplegar la versión más reciente del sistema en rama test</li>
                     <li>Reiniciar el servidor red</li>
@@ -56,12 +57,14 @@
             <td>
                 <ul>
                     <li>Ejecutar todas las pruebas automatizadas</li>
+                    <li>Recopilar los resultados de las pruebas<a href="https://docs.google.com/spreadsheets/d/1COgOU-ofC5KzrTOThXCoJXs8LXQftDNAoe0DgmMk2Tk/edit#gid=0">(Link a hoja de pruebas)</li>
+                    <li>En caso de que haya habido algún fallo en las pruebas, arregla el error de dicho test</li>
                     <li>Hacer todas las pruebas de funcionalidad a los componentes desarrollados en la iteración</li>
-                    <li>Recopilar los resultados de las pruebas</li>
-                    <li>En caso de que haya habido algún fallo en las pruebas, arreglar los errores y volver a iniciar el proceso</li>
+                    <li>En caso de que haya habido algún fallo en las pruebas, generar registro en el defect log de tu proyecto<a href="https://docs.google.com/spreadsheets/d/1K0_RjF9w9UU10ASU7Xrnr3GllcwT-VLLO-StKtlXMI4/edit">(Link a Defect Log)</a></li>
+                    <li>En caso de que no se hayan encontrado errores, seguir con el siguiente paso, de lo contrario, ejecutar este mismo proceso hasta que no haya errores</li>
                 </ul>
             </td>
-            <td> 
+            <td>
                     MA 2.1 / 2.3 <br>
                     VER 3.1 / 3.2
             </td>
