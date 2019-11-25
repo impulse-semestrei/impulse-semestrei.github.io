@@ -1,0 +1,996 @@
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+</head>
+<body class="c29"><p class="c24"><span class="c22">&nbsp;</span><span
+        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 109.50px; height: 109.50px;"><img
+        alt="" src="images/image2.jpg"
+        style="width: 109.50px; height: 109.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+        title=""></span><span
+        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 8.00px;"><img
+        alt="" src="images/image1.png"
+        style="width: 602.00px; height: 8.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+        title="l&iacute;nea horizontal"></span></p>
+<p class="c5"><span class="c26">Gu&iacute;a para hacer Pull Requests</span></p>
+<p class="c5"><span class="c8">Objetivo</span></p>
+<p class="c5"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="c5"><span class="c23">Explicar a los integrantes del departamento c&oacute;mo hacer solicitudes de cambio para los elementos de configuraci&oacute;n, con el prop&oacute;sito de </span><span
+        class="c0">prevenir defectos, mejorar la calidad de los productos de trabajo, lograr trazabilidad entre los cambios y permitir la gesti&oacute;n de versiones.</span>
+</p>
+<p class="c5 c12"><span class="c11"></span></p>
+<p class="c5"><span class="c11">Nota:</span></p>
+<p class="c5"><span class="c11">Los cambios a realizar no forzosamente tienen que ser c&oacute;digo.</span></p>
+<p class="c5 c12 c20"><span class="c0"></span></p>
+<p class="c5"><span class="c30">Prerrequisitos para hacer una solicitud de cambios:</span></p>
+<ol class="c16 lst-kix_h0w30z8z29kv-0 start" start="1">
+    <li class="c13"><span class="c0">Aseg&uacute;rate de que lo que deseas integrar sea una tarea completa.</span></li>
+    <li class="c13"><span class="c0">Aseg&uacute;rate de que los cambios hayan cumplido con las checklists de calidad que les corresponda.</span>
+    </li>
+    <li class="c13"><span class="c23">Aseg&uacute;rate de que lo que est&eacute;s subiendo a nivel controlado sea un elemento de configuraci&oacute;n (</span><span
+            class="c6"><a class="c15"
+                          href="https://www.google.com/url?q=https://impulse-semestrei.github.io/checklists/ChecklistConfiguracion.html&amp;sa=D&amp;ust=1574441849929000">https://impulse-semestrei.github.io/checklists/ChecklistConfiguracion.html</a></span><span
+            class="c0">). </span></li>
+</ol>
+<p class="c5"><span class="c8">Pasos para hacer una solicitud de cambios:</span></p>
+<ol class="c16 lst-kix_9rz8x1rg4cud-0 start" start="1">
+    <li class="c4"><span class="c0">A&ntilde;adir los cambios</span></li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1 start" start="1">
+    <li class="c5 c7"><span class="c0">Ver los cambios que est&aacute;n en la versi&oacute;n que est&aacute;s editando. &nbsp;Al usar git, puedes emplear el comando &ldquo;git status&rdquo; para ver el cambio en tu rama.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Obtener otros cambios realizados en el elemento de configuraci&oacute;n. En git, puedes obtener los cambios nuevos usando el comando &ldquo;git pull&rdquo;.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Revisar los cambios a realizar.</span></li>
+    <li class="c5 c7"><span class="c0">A&ntilde;adir los cambios necesarios a la solicitud de cambio. Si est&aacute;s usando git y deseas incluir todos los cambios dentro de tu solicitud, ejecuta el comando &ldquo;git add -A&rdquo;. Si hay cambios que no deseas incluir, haz &ldquo;git add &lt;path&gt;&rdquo; por cada uno de los cambios que deseas incluir en tu solicitud.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Eliminar cambios que no sean necesarios. En git, despu&eacute;s de haber incluido los cambios ejecuta el comando &ldquo;git stash&rdquo; para eliminar los cambios innecesarios de tu rama.</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-0" start="2">
+    <li class="c4"><span class="c0">Guardar los cambios en el sistema de manejo de configuraci&oacute;n</span></li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1 start" start="1">
+    <li class="c5 c7"><span class="c0">En tu solicitud, a&ntilde;ade un mensaje que explique los cambios realizados. Si est&aacute;s usando git y los cambios pueden expresarse en una sola l&iacute;nea, usa el comando &ldquo;git commit -m &lt;mensaje&gt;&rdquo;. Si hiciste una gran cantidad de cambios que no pueden expresarse en una sola l&iacute;nea, haz un listado de los cambios en. corre el comando &ldquo;git commit&rdquo;(sin el &ldquo;-m&rdquo;) para abrir un editor de texto. </span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-2 start" start="1">
+    <li class="c3"><span class="c0">Dentro del editor, utiliza la primera l&iacute;nea para escribir el asunto del cambio. El asunto debe contener un verbo en infinitivo y un resumen de los cambios.</span>
+    </li>
+    <li class="c3"><span class="c0">Escribe a continuaci&oacute;n cada uno de los cambios en bullet points de manera m&aacute;s espec&iacute;fica.</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1" start="2">
+    <li class="c5 c7"><span class="c23">Publica</span><span class="c0">&nbsp;los cambios al sistema de manejo de configuraci&oacute;n. Si est&aacute;s usando git, ejecuta el comando &ldquo;git push origin &lt;tu_rama&gt;&rdquo;.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Obt&eacute;n la &uacute;ltima versi&oacute;n del nivel controlado del sistema de configuraci&oacute;n. Si est&aacute;s usando git, ejecuta el comando &ldquo;git pull origin &lt;rama a la que se desea integrar&gt;&rdquo;. Realizar luego lo siguiente:</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-2 start" start="1">
+    <li class="c3"><span class="c0">Si hay conflictos, resu&eacute;lvelos.</span></li>
+    <li class="c3"><span class="c0">A&ntilde;ade los cambios realizados. Si est&aacute;s en git, ejecuta el comando &ldquo;git add -A&rdquo;.</span>
+    </li>
+    <li class="c3"><span class="c0">A&ntilde;ade un mensaje que explique los cambios. En git, ejecuta el comando &ldquo; git commit -m &lsquo;arreglar conflictos&rsquo; &nbsp;&rdquo;.</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1" start="4">
+    <li class="c5 c7"><span class="c23">Publica</span><span class="c0">&nbsp;los cambios en el sistema de manejo de configuraci&oacute;n. En git, ejecuta el comando &ldquo;git push origin &lt;tu_rama&gt;&rdquo;.</span>
+    </li>
+</ol>
+<p class="c5 c12"><span class="c0"></span></p>
+<p class="c5"><span class="c0">Hacer una solicitud de cambio.</span></p>
+<p class="c5"><span class="c0">Si est&aacute;s usando git, hacer lo siguiente:</span></p>
+<ol class="c16 lst-kix_psqzyxq95y3b-0 start" start="1">
+    <li class="c4"><span class="c0">Abre en el navegador el repositorio de github correspondiente.</span></li>
+    <li class="c4"><span class="c0">Dir&iacute;gete a &nbsp;la pesta&ntilde;a de &ldquo;Pull Requests&rdquo;.</span>
+    </li>
+    <li class="c4"><span class="c0">Da clic en el bot&oacute;n &ldquo;New pull request&rdquo;.</span></li>
+    <li class="c4"><span class="c0">Deja la rama a la que quieres integrar los cambios como rama base y pon como rama de comparaci&oacute;n la rama que deseas integrar.</span>
+    </li>
+    <li class="c4"><span class="c0">Da clic al bot&oacute;n &ldquo;Create new pull request&rdquo;.</span></li>
+    <li class="c4"><span class="c0">Revisa que el nombre del pull request sea el correcto.</span></li>
+    <li class="c4"><span class="c0">Haz un listado de todos los cambios a aplicar en el cuerpo del pull request.</span>
+    </li>
+    <li class="c4"><span class="c0">Da click en el apartado de Reviewers del lado derecho de la p&aacute;gina</span>
+    </li>
+    <li class="c4"><span class="c0">Escoger a un reviewer</span></li>
+</ol>
+<ol class="c16 lst-kix_psqzyxq95y3b-1 start" start="1">
+    <li class="c5 c7"><span class="c0">Si no sabes a qui&eacute;n escoger, puedes utilizar el inventario de habilidades para encontrar a un reviewer adecuado.</span>
+    </li>
+    <li class="c5 c7"><span
+            class="c0">Si deseas integrar a master, incluye como reviewers a los integrantes del CCB.</span></li>
+</ol>
+<ol class="c16 lst-kix_psqzyxq95y3b-0" start="10">
+    <li class="c4"><span class="c0">Da clic en el bot&oacute;n &ldquo;Create pull request&rdquo;.</span></li>
+</ol>
+<p class="c5 c12"><span class="c0"></span></p>
+<p class="c12 c17"><span class="c28"></span></p>
+<p class="c5 c12"><span class="c14"></span></p></body>
+
+<style type="text/css">@import url('https://themes.googleusercontent.com/fonts/css?kit=iMc4-4exjgqA-toZgqqJBccUMOoWrB6oRHLwLDi6Oi1VXI8NDDNQSrGMtKvat7PJ_kmCvy597kDopqFAXvpeaA');
+
+ol.lst-kix_psqzyxq95y3b-7.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-7 0
+}
+
+.lst-kix_9rz8x1rg4cud-5 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-5
+}
+
+.lst-kix_h0w30z8z29kv-3 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-3
+}
+
+.lst-kix_psqzyxq95y3b-2 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-2
+}
+
+.lst-kix_9rz8x1rg4cud-6 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-6
+}
+
+.lst-kix_h0w30z8z29kv-7 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-7, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-4 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-4
+}
+
+.lst-kix_h0w30z8z29kv-8 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-8, lower-roman) ". "
+}
+
+ul.lst-kix_r81whipdrqk3-2 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-1 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-4 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-5.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-5 0
+}
+
+ul.lst-kix_r81whipdrqk3-6 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-5 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-8 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-7 {
+    list-style-type: none
+}
+
+.lst-kix_h0w30z8z29kv-1 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-1
+}
+
+ol.lst-kix_9rz8x1rg4cud-2.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-2 0
+}
+
+ul.lst-kix_r81whipdrqk3-0 {
+    list-style-type: none
+}
+
+.lst-kix_r81whipdrqk3-7 > li:before {
+    content: "\0025cb  "
+}
+
+.lst-kix_r81whipdrqk3-6 > li:before {
+    content: "\0025cf  "
+}
+
+.lst-kix_r81whipdrqk3-4 > li:before {
+    content: "\0025cb  "
+}
+
+ol.lst-kix_h0w30z8z29kv-5.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-5 0
+}
+
+.lst-kix_r81whipdrqk3-5 > li:before {
+    content: "\0025a0  "
+}
+
+.lst-kix_r81whipdrqk3-2 > li:before {
+    content: "\0025a0  "
+}
+
+ol.lst-kix_9rz8x1rg4cud-8.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-8 0
+}
+
+.lst-kix_r81whipdrqk3-3 > li:before {
+    content: "\0025cf  "
+}
+
+.lst-kix_psqzyxq95y3b-1 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-1
+}
+
+ol.lst-kix_h0w30z8z29kv-2.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-2 0
+}
+
+ol.lst-kix_9rz8x1rg4cud-6.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-6 0
+}
+
+.lst-kix_9rz8x1rg4cud-2 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-2
+}
+
+.lst-kix_psqzyxq95y3b-4 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-4
+}
+
+ol.lst-kix_h0w30z8z29kv-8.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-8 0
+}
+
+ol.lst-kix_psqzyxq95y3b-7 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-8 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-5 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-6 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-4 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-1 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-2 {
+    list-style-type: none
+}
+
+.lst-kix_r81whipdrqk3-8 > li:before {
+    content: "\0025a0  "
+}
+
+ol.lst-kix_psqzyxq95y3b-5.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-5 0
+}
+
+ol.lst-kix_h0w30z8z29kv-1.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-1 0
+}
+
+.lst-kix_9rz8x1rg4cud-3 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-3
+}
+
+.lst-kix_9rz8x1rg4cud-8 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-8, lower-roman) ". "
+}
+
+ol.lst-kix_9rz8x1rg4cud-0.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-0 0
+}
+
+.lst-kix_9rz8x1rg4cud-7 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-7, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-1 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-1, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-3 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-3, decimal) ". "
+}
+
+.lst-kix_psqzyxq95y3b-3 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-3
+}
+
+.lst-kix_h0w30z8z29kv-2 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-2, lower-roman) ". "
+}
+
+.lst-kix_h0w30z8z29kv-6 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-6, decimal) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-5 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-5, lower-roman) ". "
+}
+
+ol.lst-kix_9rz8x1rg4cud-7.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-7 0
+}
+
+.lst-kix_psqzyxq95y3b-0 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-0
+}
+
+.lst-kix_h0w30z8z29kv-5 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-5, lower-roman) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-6 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-6, decimal) ". "
+}
+
+ol.lst-kix_h0w30z8z29kv-0.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-0 0
+}
+
+.lst-kix_h0w30z8z29kv-4 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-4, lower-latin) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-0 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-0, decimal) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-1 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-1, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-2 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-2
+}
+
+.lst-kix_h0w30z8z29kv-5 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-5
+}
+
+.lst-kix_9rz8x1rg4cud-4 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-4, lower-latin) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-3 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-3, decimal) ". "
+}
+
+ol.lst-kix_h0w30z8z29kv-7.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-7 0
+}
+
+.lst-kix_9rz8x1rg4cud-2 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-2, lower-roman) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-4.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-4 0
+}
+
+.lst-kix_h0w30z8z29kv-0 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-0, decimal) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-0.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-0 0
+}
+
+.lst-kix_psqzyxq95y3b-7 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-7
+}
+
+ol.lst-kix_h0w30z8z29kv-3.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-3 0
+}
+
+ol.lst-kix_9rz8x1rg4cud-1.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-1 0
+}
+
+ol.lst-kix_h0w30z8z29kv-0 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-2 {
+    list-style-type: none
+}
+
+.lst-kix_h0w30z8z29kv-8 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-8
+}
+
+ol.lst-kix_h0w30z8z29kv-1 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-4 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-6.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-6 0
+}
+
+ol.lst-kix_psqzyxq95y3b-3.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-3 0
+}
+
+.lst-kix_psqzyxq95y3b-6 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-6
+}
+
+.lst-kix_9rz8x1rg4cud-0 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-0
+}
+
+ol.lst-kix_9rz8x1rg4cud-4.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-4 0
+}
+
+.lst-kix_psqzyxq95y3b-5 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-5, lower-roman) ". "
+}
+
+.lst-kix_psqzyxq95y3b-6 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-6, decimal) ". "
+}
+
+.lst-kix_psqzyxq95y3b-2 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-2, lower-roman) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-6.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-6 0
+}
+
+.lst-kix_psqzyxq95y3b-3 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-3, decimal) ". "
+}
+
+.lst-kix_psqzyxq95y3b-4 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-4, lower-latin) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-0 {
+    list-style-type: none
+}
+
+.lst-kix_psqzyxq95y3b-1 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-1, lower-latin) ". "
+}
+
+.lst-kix_psqzyxq95y3b-0 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-0, decimal) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-8 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-8
+}
+
+ol.lst-kix_9rz8x1rg4cud-1 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-0 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-2 {
+    list-style-type: none
+}
+
+.lst-kix_r81whipdrqk3-0 > li:before {
+    content: "\0025cf  "
+}
+
+.lst-kix_r81whipdrqk3-1 > li:before {
+    content: "\0025cb  "
+}
+
+.lst-kix_h0w30z8z29kv-6 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-6
+}
+
+ol.lst-kix_psqzyxq95y3b-2.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-2 0
+}
+
+.lst-kix_h0w30z8z29kv-0 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-0
+}
+
+.lst-kix_9rz8x1rg4cud-7 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-7
+}
+
+ol.lst-kix_psqzyxq95y3b-8.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-8 0
+}
+
+.lst-kix_psqzyxq95y3b-7 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-7, lower-latin) ". "
+}
+
+.lst-kix_psqzyxq95y3b-8 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-8, lower-roman) ". "
+}
+
+.lst-kix_h0w30z8z29kv-7 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-7
+}
+
+ol.lst-kix_psqzyxq95y3b-1.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-1 0
+}
+
+ol.lst-kix_h0w30z8z29kv-4.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-4 0
+}
+
+.lst-kix_9rz8x1rg4cud-4 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-4
+}
+
+.lst-kix_psqzyxq95y3b-5 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-5
+}
+
+ol.lst-kix_h0w30z8z29kv-6 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-5 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-8 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-7 {
+    list-style-type: none
+}
+
+.lst-kix_psqzyxq95y3b-8 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-8
+}
+
+.lst-kix_9rz8x1rg4cud-1 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-1
+}
+
+ol.lst-kix_9rz8x1rg4cud-3.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-3 0
+}
+
+ol.lst-kix_9rz8x1rg4cud-8 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-5 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-4 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-7 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-6 {
+    list-style-type: none
+}
+
+ol {
+    margin: 0;
+    padding: 0
+}
+
+table td, table th {
+    padding: 0
+}
+
+.c9 {
+    border-right-style: solid;
+    padding: 5pt 5pt 5pt 5pt;
+    border-bottom-color: #000000;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    border-left-color: #000000;
+    vertical-align: top;
+    border-right-color: #000000;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 112.9pt;
+    border-top-color: #000000;
+    border-bottom-style: solid
+}
+
+.c4 {
+    margin-left: 36pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c13 {
+    margin-left: 36pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: justify
+}
+
+.c3 {
+    margin-left: 108pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c0 {
+    color: #666666;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c1 {
+    color: #695d46;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c8 {
+    color: #ff470e;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 18pt;
+    font-family: "PT Sans Narrow";
+    font-style: normal
+}
+
+.c28 {
+    color: #695d46;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c11 {
+    color: #666666;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c21 {
+    color: #695d46;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c14 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Arial";
+    font-style: normal
+}
+
+.c6 {
+    -webkit-text-decoration-skip: none;
+    color: #1155cc;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-family: "Open Sans"
+}
+
+.c18 {
+    -webkit-text-decoration-skip: none;
+    color: #1155cc;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-family: "Open Sans"
+}
+
+.c25 {
+    padding-top: 6pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c5 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c24 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c17 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: justify
+}
+
+.c30 {
+    font-size: 18pt;
+    font-family: "PT Sans Narrow";
+    color: #ff470e;
+    font-weight: 700
+}
+
+.c26 {
+    font-size: 42pt;
+    font-family: "PT Sans Narrow";
+    color: #695d46;
+    font-weight: 700
+}
+
+.c27 {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-right: auto
+}
+
+.c22 {
+    font-size: 12pt;
+    font-family: "Open Sans";
+    color: #695d46;
+    font-weight: 400
+}
+
+.c10 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    text-align: left
+}
+
+.c29 {
+    background-color: #ffffff;
+    max-width: 451.4pt;
+    padding: 72pt 72pt 72pt 72pt
+}
+
+.c23 {
+    font-family: "Open Sans";
+    color: #666666;
+    font-weight: 400
+}
+
+.c19 {
+    font-family: "Open Sans";
+    color: #695d46;
+    font-weight: 700
+}
+
+.c15 {
+    color: inherit;
+    text-decoration: inherit
+}
+
+.c7 {
+    margin-left: 72pt;
+    padding-left: 0pt
+}
+
+.c16 {
+    padding: 0;
+    margin: 0
+}
+
+.c20 {
+    margin-left: 36pt
+}
+
+.c12 {
+    height: 11pt
+}
+
+.c2 {
+    height: 0pt
+}
+
+.title {
+    padding-top: 0pt;
+    color: #000000;
+    font-size: 26pt;
+    padding-bottom: 3pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.subtitle {
+    padding-top: 0pt;
+    color: #666666;
+    font-size: 15pt;
+    padding-bottom: 16pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+li {
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+p {
+    margin: 0;
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+h1 {
+    padding-top: 20pt;
+    color: #000000;
+    font-size: 20pt;
+    padding-bottom: 6pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h2 {
+    padding-top: 18pt;
+    color: #000000;
+    font-size: 16pt;
+    padding-bottom: 6pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h3 {
+    padding-top: 16pt;
+    color: #434343;
+    font-size: 14pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h4 {
+    padding-top: 14pt;
+    color: #666666;
+    font-size: 12pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h5 {
+    padding-top: 12pt;
+    color: #666666;
+    font-size: 11pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h6 {
+    padding-top: 12pt;
+    color: #666666;
+    font-size: 11pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}</style>
+</html>
