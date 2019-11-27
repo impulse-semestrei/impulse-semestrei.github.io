@@ -1,96 +1,177 @@
-<h1>Despliegue interno</h1>
-<h3>Propósito</h3>
-<ul>
-    <li>Detectar defectos en la solución</li>
-    <li>Tener la última solución desarrollada corriendo en un ambiente parecido al de producción</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
 
-<h3>Criterios de entrada</h3>
-<ul>
-    <li>User Story que haya pasado por el proceso de implementación</li>
-    <li>Tener total conocimineto de la <a href="https://docs.google.com/document/d/1gyKwSD_gJw6pyD6CO4KOLy5PNqBz8qdW298Mjaj5qaY/edit" target="blank">Política de Obtención de Datos.</a></li>
-</ul>
+<head>
 
-<h4>Guías para seguir el proceso:</h4>
-<ul>
-    <li><a href="https://docs.google.com/document/d/1TvyVQnKObaS42SX9yGX10v8xv2D6_7UFNEYf61ri9Tw/edit?usp=sharing" target="_blank">Guía para acceder y preparar el ambiente de producción</a></li>
-    <li><a href="https://docs.google.com/document/d/1iZR_uIgyOFmTEIxYxdh_Rue0UPSpBYgCHkjrbksNemE/edit?usp=sharing" target="_blank">Guía para ejecución de pruebas y rollback</a></li>
-    <li><a href="https://docs.google.com/document/d/1xD1JtwF3NZRbLXyBYdYoCAJYjsnUezRxDPs5bP9WAAU/edit?usp=sharing" target="_blank">Guía para hacer pull requests</a></li>
-</ul>
-<h3>Fases</h3>
-<table>
-    <thead>
-        <tr>
-            <td>
-                <h3>Fase</h3>
-            </td>
-            <td>
-                <h3>Pasos</h3>
-            </td>
-            <td>
-                <h3>P.A</h3>
-            </td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                1.- Preparar el entorno (<a href="https://docs.google.com/document/d/1TvyVQnKObaS42SX9yGX10v8xv2D6_7UFNEYf61ri9Tw/edit?usp=sharing" target="_blank">Guía</a>)
-            </td>
-            <td>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Impulse</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Impulse</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../procesos.html">Procesos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../checklist.html">Checklist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../politicas.html">Politicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../glosario.html">Glosario</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/background.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Despliegue Interno</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <h3>Propósito</h3>
+        <ul>
+          <li>Detectar defectos en la solución</li>
+          <li>Tener la última solución desarrollada corriendo en un ambiente parecido al de producción</li>
+        </ul>
+
+        <h3>Criterios de entrada</h3>
+        <ul>
+          <li>User Story que haya pasado por el proceso de implementación</li>
+          <li>Tener total conocimineto de la <a style="color:blue;" href="https://docs.google.com/document/d/1gyKwSD_gJw6pyD6CO4KOLy5PNqBz8qdW298Mjaj5qaY/edit" target="blank">Política de Obtención de Datos.</a></li>
+        </ul>
+
+        <h4>Guías para seguir el proceso:</h4>
+        <ul>
+          <li><a style="color:blue;" href="https://docs.google.com/document/d/1TvyVQnKObaS42SX9yGX10v8xv2D6_7UFNEYf61ri9Tw/edit?usp=sharing" target="_blank">Guía para acceder y preparar el ambiente de producción</a></li>
+          <li><a style="color:blue;" href="https://docs.google.com/document/d/1iZR_uIgyOFmTEIxYxdh_Rue0UPSpBYgCHkjrbksNemE/edit?usp=sharing" target="_blank">Guía para ejecución de pruebas y rollback</a></li>
+          <li><a style="color:blue;" href="https://docs.google.com/document/d/1xD1JtwF3NZRbLXyBYdYoCAJYjsnUezRxDPs5bP9WAAU/edit?usp=sharing" target="_blank">Guía para hacer pull requests</a></li>
+        </ul>
+        <h3>Fases</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <td>
+                Fase
+              </td>
+              <td>
+                Pasos
+              </td>
+              <td>
+                P.A
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1.- Preparar el entorno (<a style="color:blue;" href="https://docs.google.com/document/d/1TvyVQnKObaS42SX9yGX10v8xv2D6_7UFNEYf61ri9Tw/edit?usp=sharing" target="_blank">Guía</a>)
+              </td>
+              <td>
                 <ul>
-                    <li>Realiza un merge de la rama develop a la rama test en el repositorio del proyecto</li>
-                    <li>Acceder al ambiente de pruebas</li>
-                    <li>Desplegar la versión más reciente del sistema en rama test</li>
-                    <li>Reiniciar el servidor red</li>
+                  <li>Realiza un merge de la rama develop a la rama test en el repositorio del proyecto</li>
+                  <li>Acceder al ambiente de pruebas</li>
+                  <li>Desplegar la versión más reciente del sistema en rama test</li>
+                  <li>Reiniciar el servidor red</li>
                 </ul>
-            </td>
-            <td>
+              </td>
+              <td>
                 VAL 1.2 <br>
                VER 1.1
+
             </td>
-        </tr>
-        <tr>
-            <td>
-                2.- Ejecutar las pruebas en la rama test (<a href="https://docs.google.com/document/d/1iZR_uIgyOFmTEIxYxdh_Rue0UPSpBYgCHkjrbksNemE/edit?usp=sharing" target="_blank">Guía</a>)
-            </td>
-            <td>
+            </tr>
+            <tr>
+              <td>
+                2.- Ejecutar las pruebas en la rama test (<a style="color:blue;" href="https://docs.google.com/document/d/1iZR_uIgyOFmTEIxYxdh_Rue0UPSpBYgCHkjrbksNemE/edit?usp=sharing" target="_blank">Guía</a>)
+              </td>
+              <td>
                 <ul>
-                    <li>Ejecutar todas las pruebas automatizadas</li>
-                    <li>Recopilar los resultados de las pruebas<a href="https://docs.google.com/spreadsheets/d/1COgOU-ofC5KzrTOThXCoJXs8LXQftDNAoe0DgmMk2Tk/edit#gid=0">(Link a hoja de pruebas)</li>
+                  <li>Ejecutar todas las pruebas automatizadas</li>
+                  <li>Recopilar los resultados de las pruebas<a style="color:blue;"href="https://docs.google.com/spreadsheets/d/1COgOU-ofC5KzrTOThXCoJXs8LXQftDNAoe0DgmMk2Tk/edit#gid=0">(Link a hoja de pruebas)</li>
                     <li>En caso de que haya habido algún fallo en las pruebas, arregla el error de dicho test</li>
                     <li>Hacer todas las pruebas de funcionalidad a los componentes desarrollados en la iteración</li>
                     <li>En caso de que haya habido algún fallo en las pruebas, generar registro en el defect log de tu proyecto<a href="https://docs.google.com/spreadsheets/d/1K0_RjF9w9UU10ASU7Xrnr3GllcwT-VLLO-StKtlXMI4/edit">(Link a Defect Log)</a></li>
-                    <li>En caso de que no se hayan encontrado errores, seguir con el siguiente paso, de lo contrario, ejecutar este mismo proceso hasta que no haya errores</li>
+                  <li>En caso de que no se hayan encontrado errores, seguir con el siguiente paso, de lo contrario, ejecutar este mismo proceso hasta que no haya errores</li>
                 </ul>
-            </td>
-            <td>
-                    MA 2.1 / 2.3 <br>
+              </td>
+              <td>
+                MA 2.1 / 2.3 <br>
                     VER 3.1 / 3.2
-            </td>
-        </tr>
-        <tr>
-            <td>
-                3.- Solicitud a Master
-            </td>
-            <td>
-                <ul>
-                    <li>Preparar notas de versión que describan los cambios para la próxima versión de la baseline con el siguiente <a href="../templates/NotasDeVersion.html">formato</a> y añadirla a nivel controlado.</li>
-                    <li>Hacer una solicitud de cambio al nivel estático con los cambios en nivel controlado (seguir <a href="https://docs.google.com/document/d/1xD1JtwF3NZRbLXyBYdYoCAJYjsnUezRxDPs5bP9WAAU/edit?usp=sharing"  target="_blank">guía</a>).</li>
-                </ul>
-            </td>
-            <td>
-               VER 2.2 / 2.3
-               CM 1.3 / 3.1
-            </td>
-        </tr>
-    </tbody>
-</table>
 
-<h3>Resultado</h3>
-<ul>
-    <li>Última versión del software corriendo en el ambiente de testing</li>
-    <li>Reporte de resultados de las pruebas en Drive</li>
-    <li><a href="https://drive.google.com/drive/u/1/folders/1pCTWoQksfe7RJp6aVmLuUhPCvDoFLZsE" target="_blank">Voyager</a></li>
-    <li><a href="https://drive.google.com/drive/u/1/folders/15hgljjZRLg9JrzVjHBU3g9mx-boaz2_A" target="_blank">Vostok</a></li>
-</ul>
+            </td>
+            </tr>
+            <tr>
+              <td>
+                3.- Solicitud a Master
+              </td>
+              <td>
+                <ul>
+                  <li>Preparar notas de versión que describan los cambios para la próxima versión de la baseline con el siguiente <a style="color:blue;" href="../templates/NotasDeVersion.html">formato</a> y añadirla a nivel controlado.</li>
+                  <li>Hacer una solicitud de cambio al nivel estático con los cambios en nivel controlado (seguir <a style="color:blue;" href="https://docs.google.com/document/d/1xD1JtwF3NZRbLXyBYdYoCAJYjsnUezRxDPs5bP9WAAU/edit?usp=sharing"  target="_blank">guía</a>).</li>
+                </ul>
+              </td>
+              <td>
+                VER 2.2 / 2.3
+                CM 1.3 / 3.1
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Resultado</h3>
+        Última versión del software corriendo en el ambiente de testing
+        <ul>
+          <li><a style="color:blue;" href="http://67.205.190.201/cuentas/login/?next=/">Ambiente de pruebas de Voyager</a></li>
+          <li><a style="color:blue;" href="http://www.rescate1test.com/">Ambiente de pruebas de Vostok</a></li>
+        </ul>
+        Reporte de resultados de las pruebas en Drive
+        <ul>
+          <li><a style="color:blue;" href="https://drive.google.com/drive/u/1/folders/1pCTWoQksfe7RJp6aVmLuUhPCvDoFLZsE" target="_blank">Reportes de resultado de Voyager</a></li>
+          <li><a style="color:blue;" href="https://drive.google.com/drive/u/1/folders/15hgljjZRLg9JrzVjHBU3g9mx-boaz2_A" target="_blank">Reportes de resultado de Vostok</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
