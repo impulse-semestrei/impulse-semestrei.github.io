@@ -110,7 +110,7 @@
             <ul>
               <li>2.1: Evitar que las API Keys aparezcan de cualquier manera en el repositorio de GitHub.</li>
               <li>2.2: Evitar que las API Keys se implementen directamente en el código.</li>
-              <li>2.3: Guardar las API Keys en archivos de texto dentro de una carpeta del proyecto llamada API’s a la cual únicamente tienen acceso los miembros del departamento.</li>
+              <li>2.3: Guardar las API Keys en archivos de texto dentro de la carpeta llamada "API Keys" de su respectivo proyecto dentro de la unidad compartida del departamento llamada "Impulse credenciales". Unicamente los miembros del proyecto tienen acceso a esta carpeta.</li>
               <li>2.4: Si se necesita utilizar la API Key durante la implementación de una User Story, descargar el archivo correspondiente a la API que se desea utilizar. Para obtener la llave se lee el archivo txt y se almacena el valor en una variable local para ser utilizada. Este archivo txt debe ser incluido en el archivo .gitignore del proyecto para evitar que se suba al repositorio.</li>
             </ul>
           </li>
@@ -122,7 +122,7 @@
               <h3>Base de datos local: </h3>
               <ul>
                 <li>3.1: Utilizar contraseñas fáciles de recordar que agilicen el proceso de desarrollo.</li>
-                <li>3.2: En caso de crear distintos roles, almacenar las contraseñas para acceder al sistema en una carpeta en Drive con el nombre de “Credenciales locales”. Sólo los miembros del proyecto deben tener acceso a dicha carpeta.</li>
+                <li>3.2: En caso de crear distintos roles, almacenar las contraseñas para acceder al sistema en una carpeta en Drive con el nombre de “Credenciales locales” localizada en la carpeta correspondiente al nombre del proyecto dentro de la unidad compartida "Impulse credenciales". Sólo los miembros del proyecto deben tener acceso a dicha carpeta.</li>
                 <li>3.3: Todos los miembros del equipo deben utilizar estas contraseñas provisionales durante el desarrollo del proyecto.</li>
               </ul>
               <h3>Base de datos en producción: </h3>
@@ -134,7 +134,7 @@
                   <li>No usar información personal, como nombres o fechas de nacimiento.</li>
                   <li>No usar palabras o frases simples, como "password", "qwerty" o "123456"</li>
                 </ul>
-                <li>3.5: Almacenar dichas contraseñas dentro de una carpeta en drive llamada “Credenciales de producción”. Sólo los Architecture Owners deben tener acceso a esta carpeta y otorgan el acceso cuando se realiza un cambio de rol.</li>
+                <li>3.5: Almacenar dichas contraseñas dentro de una carpeta en drive llamada “Credenciales de producción” localizada en la carpeta correspondiente al nombre del proyecto dentro de la unidad compartida "Impulse credenciales". Sólo los miembros del proyecto deben tener acceso a dicha carpeta.</li>
                 <li>3.6: Encriptar las contraseñas de los usuarios que utilizan el sistema en caso de que el framework en el que se desarrolla no lo haga de manera automática.</li>
               </ul>
             </ul>
@@ -143,17 +143,16 @@
             <h2>4: Credenciales del servidor</h2>
             <p>En el caso de las credenciales para acceder al servidor en producción:</p>
             <ul>
-              <li>4.1: Guardar las credenciales de acceso al servidor, tanto de producción como de prueba, en la carpeta del proyecto “Credenciales de producción”.</li>
+              <li>4.1: Guardar las credenciales de acceso al servidor, tanto de producción como de prueba, en la carpeta del proyecto “Credenciales de producción” dentro de la carpeta con el nombre del proyecto localizada en la unidad compartida "Impulse credenciales". Sólo los miembros del equipo tienen acceso a dicha carpeta.</li>
             </ul>
           </li>
           <li>
             <h2>5: Manipulación y acceso a la información</h2>
             <p>Si el sistema manipula información confidencial del cliente, se seguirán estos pasos para asegurar su protección:</p>
             <ul>
-              <li>5.1: Todos los archivos que contengan información confidencial del cliente (archivos .word, .xslx, .png, .txt, etc…) serán almacenados en una carpeta con el nombre del cliente dentro de la carpeta del proyecto.</li>
+              <li>5.1: Todos los archivos que contengan información confidencial del cliente (archivos .word, .xslx, .png, .txt, etc…) serán almacenados en una carpeta con el nombre del cliente dentro de la carpeta con el nombre del proyecto en la unidad compartida "Impulse credenciales".</li>
               <li>5.2: Cualquier solicitud de modificar o borrar la información confidencial del cliente se comunicará a uno de los Product Owners.</li>
-              <li>5.3: Cualquier solicitud de acceder a la información almacenada en el sistema por un tercero debe de tener la aprobación del cliente y del departamento de Impulse.</li>
-              <li>5.4: Los miembros del equipo eliminarán todos los archivos almacenados de manera local que contengan información confidencial del cliente al término del desarrollo del proyecto.</li>
+              <li>5.3: Los miembros del equipo eliminarán todos los archivos almacenados de manera local que contengan información confidencial del cliente al término del desarrollo del proyecto.</li>
             </ul>
           </li>
 				</ul>
