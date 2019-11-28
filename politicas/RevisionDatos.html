@@ -99,11 +99,22 @@
               <ul>
                   <li>Por ejemplo: Si en los timelogs hay demasiadas horas de inicio o fin que tengan los minutos terminados en 5 o 0 (como 6:15 o 6:10), se pueden considerar como datos corruptos.</li>
               </ul>
-              <li>2.5 Los datos que incumplan con los puntos anteriores se considerarán como corruptps y serán descartados del registro.</li>
+              <li>2.5 Los datos que incumplan con los puntos anteriores se considerarán como corruptos.</li>
               <ul>
                 <li>Por ejemplo: Si en el timelog hay una hora de inicio para una actividad, pero no una de fin, y el dato se registró el día pasado, no se permitirá corregirlo y será borrado.</li>
               </ul>
             </ul>
+          </li>
+          <li>
+              <h2>3. Descarte de datos corruptos</h2>
+              <ul>
+                  <li>3.1 Los datos corruptos deben ser elimiados del registro.</li>
+                  <li>3.2 El responsable de revisar los datos debe anotar en el <a style="color:blue;" href="https://docs.google.com/spreadsheets/d/1axKOl6JRt1n98hOgocZU5Q2YY9kqfwdVTXdY9pfuz2g/edit#gid=0">Log de corrupción de datos</a> todos los campos que van desde "# de error" hasta "Detectado por".</li>
+                  <li>3.3 La persona que realice las correcciones a los datos debe llenar, en el mismo log, desde los campos "Acción correctiva" hasta "Responsable".</li>
+                  <ul>
+                      <li>Como la eliminación de datos es obligatoria, no se considerará esto para anotarlo en el campo "Acción correctiva". En su lugar, debe anotarse cómo evitar que estos datos sean corruptos en el futuro. Por ejemplo: "Anotar hora de fin de tarea" como acción correctiva para las actividades de los timelogs que no fueron cerradas.</li>
+                  </ul>
+              </ul>
           </li>
           <br/>
 				</ul>
