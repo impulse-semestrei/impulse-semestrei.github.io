@@ -91,14 +91,19 @@
           <li>
             <h2>2. Criterios de revisión</h2>
             <p>El responsable de la verificación de datos hará uso de la siguiente lista de criterios para asegurar que sean válidos e íntegros:</p>
-            <ol>
+            <ul>
               <li>2.1 Las personas que obtuvieron los datos deben también registrarlos.</li>
               <li>2.2 Los datos deben registrarse el mismo día que se obtuvieron.</li>
-              <li>2.3 Los datos falsos no se tomarán en cuenta para el análisis y serán descartados del registro.</li>
+              <li>2.3 Los datos no deben estar incompletos.</li>
+              <li>2.4 Los grupos de datos no deben tener patrones sospechosos.</li>
+              <ul>
+                  <li>Por ejemplo: Si en los timelogs hay demasiadas horas de inicio o fin que tengan los minutos terminados en 5 o 0 (como 6:15 o 6:10), se pueden considerar como datos corruptos.</li>
+              </ul>
+              <li>2.5 Los datos que incumplan con los puntos anteriores se considerarán como corruptps y serán descartados del registro.</li>
               <ul>
                 <li>Por ejemplo: Si en el timelog hay una hora de inicio para una actividad, pero no una de fin, y el dato se registró el día pasado, no se permitirá corregirlo y será borrado.</li>
               </ul>
-            </ol>
+            </ul>
           </li>
           <br/>
 				</ul>
