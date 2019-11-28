@@ -1,0 +1,309 @@
+<html>
+<head>
+
+</head>
+<body class="c11"><p class="c15"><span
+        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 109.50px; height: 109.50px;"><img
+        alt="" src="images/image2.jpg"
+        style="width: 109.50px; height: 109.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+        title=""></span><span
+        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 8.00px;"><img
+        alt="" src="images/image1.png"
+        style="width: 602.00px; height: 8.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+        title="línea horizontal"></span></p>
+<p class="c2"><span class="c9">Guía para hacer Rollback</span></p>
+<p class="c2"><span class="c12 c16">Objetivo</span></p>
+<p class="c2"><span class="c4 c17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reestablecer la versión estable anterior de un nivel de control de configuración</span>
+</p>
+<p class="c2 c7"><span class="c4 c17"></span></p>
+<p class="c2 c5"><span class="c4 c17"></span></p>
+<p class="c2"><span class="c12">Rollback en git</span></p>
+<p class="c0"><span class="c10">Pasos para hacer rollback si se est usando git</span></p>
+<ul class="c13 start">
+    <li class="c8"><span class="c1">Usa </span><span class="c18"><a class="c3"
+                                                                    href="https://www.google.com/url?q=https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit&amp;sa=D&amp;ust=1574727150884000">esta referencia</a></span><span
+            class="c4 c1">&nbsp;para regresar a un commit anterior</span></li>
+</ul>
+<ul class="c13 start">
+    <li class="c14"><span class="c1 c4">Si estás en el nivel estático, regresa al commit de la release más reciente</span>
+    </li>
+    <li class="c14"><span class="c4 c1">De lo contrario, regresa al último commit</span></li>
+</ul>
+<ul class="c13">
+    <li class="c8"><span class="c1">Si estás en el nivel estático o en la rama test, seguir los mismos pasos del <a href="../procesos/IMP12DespliegueExterno.html">proceso de deploy externo</a></span><span
+            class="c1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+</ul>
+</body>
+ <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <style type="text/css">@import url('https://themes.googleusercontent.com/fonts/css?kit=iMc4-4exjgqA-toZgqqJBccUMOoWrB6oRHLwLDi6Oi1VXI8NDDNQSrGMtKvat7PJ_kmCvy597kDopqFAXvpeaA');
+    ol {
+        margin: 0;
+        padding: 0
+    }
+
+    table td, table th {
+        padding: 0
+    }
+
+    .c8 {
+        margin-left: 108pt;
+        padding-top: 0pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.2;
+        orphans: 2;
+        widows: 2;
+        text-align: justify
+    }
+
+    .c14 {
+        margin-left: 144pt;
+        padding-top: 0pt;
+        padding-left: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.2;
+        orphans: 2;
+        widows: 2;
+        text-align: justify
+    }
+
+    .c9 {
+        color: #695d46;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 42pt;
+        font-family: "PT Sans Narrow";
+        font-style: normal
+    }
+
+    .c0 {
+        margin-left: 36pt;
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.2;
+        orphans: 2;
+        widows: 2;
+        text-align: justify
+    }
+
+    .c6 {
+        color: #695d46;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 14pt;
+        font-family: "Open Sans";
+        font-style: normal
+    }
+
+    .c18 {
+        color: #1155cc;
+        font-weight: 400;
+        text-decoration: underline;
+        font-family: "Open Sans"
+    }
+
+    .c15 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.2;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c2 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .c12 {
+        font-size: 18pt;
+        font-family: "PT Sans Narrow";
+        color: #ff470e;
+        font-weight: 700
+    }
+
+    .c4 {
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-style: normal
+    }
+
+    .c11 {
+        background-color: #ffffff;
+        max-width: 451.4pt;
+        padding: 72pt 72pt 72pt 72pt
+    }
+
+    .c10 {
+        font-size: 14pt;
+        color: #695d46;
+        font-weight: 700
+    }
+
+    .c1 {
+        font-family: "Open Sans";
+        color: #695d46;
+        font-weight: 400
+    }
+
+    .c17 {
+        color: #666666;
+        font-weight: 400;
+        font-family: "Open Sans"
+    }
+
+    .c16 {
+        text-decoration: none;
+        vertical-align: baseline;
+        font-style: normal
+    }
+
+    .c13 {
+        padding: 0;
+        margin: 0
+    }
+
+    .c3 {
+        color: inherit;
+        text-decoration: inherit
+    }
+
+    .c5 {
+        margin-left: 36pt;
+        height: 11pt
+    }
+
+    .c19 {
+        font-size: 14pt
+    }
+
+    .c7 {
+        height: 11pt
+    }
+
+    .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial"
+    }
+
+    h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }
+
+    h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left
+    }</style>
+</html>
