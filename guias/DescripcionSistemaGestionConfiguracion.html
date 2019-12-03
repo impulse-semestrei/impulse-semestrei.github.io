@@ -19,13 +19,13 @@
 <p class="c8"><span class="c1"></span></p>
 <p class="c8"><span class="c1"></span></p>
 <p class="c12"><span class="c3">Estructura del sistema de manejo de la configuración</span></p>
-<p class="c12"><span class="c1">Todos los elementos de configuración del departamento están en el sistema de manejo de la configuración. El sistema de manejo de configuración se compone de varios niveles: dinámico, controlado y estático.</span>
+    <p class="c12"><span class="c1">Todos los elementos de configuración del departamento están en el sistema de manejo de la configuración el cual <strong>será manejado en git completamente</strong> (esto aplica tanto para código como otros productos de trabajo). El sistema se compone de varios niveles: dinámico, controlado y estático.</span>
 </p>
-<p class="c12"><span class="c15">El nivel dinámico</span><span class="c1">&nbsp;no tiene ninguna restricción en cuanto a los cambios que pueden hacerse y no requiere revisiones.</span>
+<p class="c12"><span class="c15">El nivel dinámico</span><span class="c1">&nbsp;no tiene ninguna restricción en cuanto a los cambios realizables y no requiere revisiones.</span>
 </p>
-<p class="c12"><span class="c15">El nivel controlado</span><span class="c1">&nbsp;requiere como criterio de entrada que se haga una revisión de los cambios antes de integrar. Este nivel contiene los &nbsp;cambios ya revisados que requieren más seguimiento antes de considerarse estables.</span>
+<p class="c12"><span class="c15">El nivel controlado</span><span class="c1">&nbsp;requiere como criterio de entrada que se haga una revisión de los cambios antes de integrar. Este nivel contiene las &nbsp;modificaciones ya revisadas que requieren más seguimiento antes de considerarse estables.</span>
 </p>
-<p class="c12"><span class="c15">El nivel estático</span><span class="c1">&nbsp;contiene las versiones estables de los elementos de configuración del departamento. Una versión estable requiere que todos sus elementos estén integrados, funcionen correctamente y estén aprobados.</span>
+<p class="c12"><span class="c15">El nivel estático</span><span class="c1">&nbsp;contiene las versiones estables de los elementos de configuración del departamento. Una versión estable requiere que todos sus componentes estén integrados, funcionen correctamente y estén aprobados.</span>
 </p>
 <p class="c8"><span class="c1"></span></p>
 <p class="c12"><span class="c3">Flujo de cambios de elementos de configuración</span></p>
@@ -37,65 +37,74 @@
     </li>
     <li class="c4"><span class="c1">En el nivel controlado se realizan pruebas y seguimiento a los elementos de configuración y sus cambios.</span>
     </li>
-    <li class="c4"><span class="c1">Una vez que han sido probados, se hace una solicitud para integrarlos con el nivel estático.</span>
+    <li class="c4"><span class="c1">Una vez probados, se hace una solicitud para integrarlos con el nivel estático.</span>
     </li>
-    <li class="c4"><span class="c11">El Configuration Control Board se reúne para revisar la solicitud de cambio a nivel estático. Si el Board aprueba la solicitud, los cambios se integran al nivel estático.</span>
+    <li class="c4"><span class="c11">El Configuration Control Board se reúne y revisa la solicitud de cambio a nivel estático. Si el Board aprueba la solicitud, los cambios se integran al nivel estático.</span>
     </li>
 </ul>
 <p class="c8"><span class="c1"></span></p>
-<p class="c12"><span class="c3">Cómo realizar un cambio:</span></p>
+<p class="c12"><span class="c3">Realización de cambios</span></p>
 <ul class="c7 lst-kix_plkwwmpbps2r-0 start">
-    <li class="c4"><span class="c1">Obtener la última versión en el nivel controlado del elemento de configuración a cambiar.</span>
+    <li class="c4"><span class="c1">Obtenga la última versión en el nivel controlado del elemento de configuración a cambiar.</span>
     </li>
-    <li class="c4"><span class="c1">Realizar los cambios en un lugar separado. Si se está usando git, crear una rama nueva para los cambios.</span>
+    <li class="c4"><span class="c1">Realice los cambios en un lugar separado. Si está usando git, cree una rama nueva para los cambios.</span>
     </li>
 </ul>
-<p class="c12"><span class="c3">Cómo pasar de nivel dinámico a nivel controlado:</span></p>
+<p class="c12"><span class="c3">Transición de nivel dinámico a nivel controlado</span></p>
 <ul class="c7 lst-kix_plkwwmpbps2r-0">
-    <li class="c4"><span class="c1">Hacer una solicitud de cambio para el elemento de configuración.</span></li>
-    <li class="c4"><span class="c1">Esta solicitud debe incluir una descripción de los cambios que se realizaron y debe asignar revisores. Si estás usando git, hacer un pull request de la nueva rama hacia develop.</span>
+    <li class="c4"><span class="c1">Haga una solicitud de cambio para el elemento de configuración.</span></li>
+    <li class="c4"><span class="c1">Incluya en la solicitud una descripción de los cambios que se realizaron y asigne revisores. Si está usando git, haga un pull request de la nueva rama hacia develop.</span>
     </li>
     <li class="c4"><span class="c1">Los cambios deben pasar por una revisión y ser aprobados antes de integrarse con el nivel controlado</span>
     </li>
 </ul>
-<p class="c12"><span class="c3">Cómo pasar de nivel controlado a nivel estático:</span></p>
+<p class="c12"><span class="c3">Transición de nivel controlado a nivel estático</span></p>
 <ul class="c7 lst-kix_7qoitdpjcc3h-0 start">
     <li class="c4"><span class="c1">Los cambios a nivel controlado deben probarse</span></li>
-    <li class="c4"><span class="c1">Al final de la iteración, hacer una solicitud de cambio para pasar lo que está en nivel controlado a nivel estático</span>
+    <li class="c4"><span class="c1">En el caso del código, al final de la iteración, haga una solicitud de cambio para pasar lo que está en nivel controlado a nivel estático</span>
+    <li class="c4"><span class="c1">En el caso de los procesos, haga una solicitud de cambio cuando el Cofiguration Control Board tenga disponibilidad (el lunes de cada semana en tiempo de departamento, preferentemente) para pasar lo que está en nivel controlado a nivel estático</span>
     </li>
-    <li class="c4"><span class="c1">El Configuration Control Board se reúne para revisar los cambios de manera exhaustiva</span>
+    <li class="c4"><span class="c1">El Configuration Control Board se reúne y revisa los cambios de manera exhaustiva</span>
     </li>
     <li class="c4"><span class="c1">Si los cambios se aprueban, se integran al nivel estático</span></li>
 </ul>
 <p class="c8"><span class="c1"></span></p>
 <p class="c12"><span
-        class="c3">Cómo ver qué versión de un archivo está en cada nivel:</span></p>
+        class="c3">Obtención de la versión de un archivo que está en cada nivel</span></p>
 <ul class="c7 lst-kix_7qoitdpjcc3h-0">
-    <li class="c4"><span class="c1">Si se está usando git, acceder al archivo en el repositorio</span></li>
+    <li class="c4"><span class="c1">Si está usando git, acceda al archivo en el repositorio</span></li>
     <li class="c4"><span
-            class="c1">Dar click al dropdown &ldquo;Branch: &lt;nombre_branch&gt;&rdquo; y elegir una rama:</span></li>
+            class="c1">De click al dropdown &ldquo;Branch: &lt;nombre_branch&gt;&rdquo; y elija una rama:</span></li>
 </ul>
 <ul class="c7 lst-kix_7qoitdpjcc3h-1 start">
-    <li class="c12 c21"><span class="c1">Si se desea ver la versión más reciente del archivo en el nivel estático, elegir la rama &ldquo;master&rdquo;</span>
+    <li class="c12 c21"><span class="c1">Para ver la versión más reciente del archivo en el nivel estático, elija la rama &ldquo;master&rdquo;</span>
     </li>
-    <li class="c12 c21"><span class="c1">Si se desea la ver la versión más reciente del archivo en el nivel controlado, elegir la rama &ldquo;develop&rdquo;</span>
+    <li class="c12 c21"><span class="c1">Para ver la versión más reciente del archivo en el nivel controlado, elija la rama &ldquo;develop&rdquo;</span>
     </li>
 </ul>
 <p class="c8"><span class="c1"></span></p>
-<p class="c12"><span class="c3">Cómo hacer cambios a elementos de configuración relacionados con la WoW del equipo en línea base:</span>
-</p>
-<p class="c8"><span class="c3"></span></p>
+<p class="c12"><span
+        class="c3">Obtención del dueño de un elemento de configuración</span></p>
+<ul class="c7 lst-kix_7qoitdpjcc3h-0">
+    <li class="c4"><span class="c1">Si está usando git, acceda al archivo en el repositorio</span></li>
+    <li class="c4"><span
+            class="c1">De click al botón &ldquo;History&rdquo;</span></li>
+    <li class="c4"><span
+        class="c1">Vea quién creó el archivo. Esa persona es el último responsable (dueño) del elemento.</span></li>
+    <li class="c4"><span
+        class="c1">Vea a los autores de los últimos cambios. Esas personas son responsables del elemento.</span></li>  
+</ul>
 <p class="c8"><span class="c1"></span></p>
 <p class="c12"><span class="c3">El Configuration Control Board</span></p>
-<p class="c12"><span class="c1">El comité se encarga de revisar exhaustivamente los cambios propuestos al nivel estático. Este comité se compone de 5 miembros del departamento que tengan conocimiento del área de gestión de la configuración y ejerzan roles relacionados con la gestión del proyecto.</span>
+<p class="c12"><span class="c1">La función del comité es revisar exhaustivamente los cambios propuestos al nivel estático. Este comité se compone de 5 miembros del departamento que tengan conocimiento del área de gestión de la configuración y ejerzan roles relacionados con la gestión del proyecto.</span>
 </p>
 <p class="c8"><span class="c1"></span></p>
-<p class="c12"><span class="c3">Miembros del Configuration Control Board:</span></p>
+<p class="c12"><span class="c3">Miembros del Configuration Control Board</span></p>
 <ul class="c7 lst-kix_7qoitdpjcc3h-0">
     <li class="c4"><span class="c1">Abraham Lemus Ruiz</span></li>
     <li class="c4"><span class="c1">Dante Maximiliano Flores Moreno</span></li>
     <li class="c4"><span class="c1">Luis Enrique Canales Oliveros</span></li>
-    <li class="c4"><span class="c1">Paulo Eugenio Solís álvarez</span></li>
+    <li class="c4"><span class="c1">Paulo Eugenio Solís Álvarez</span></li>
     <li class="c4"><span class="c1">Oswaldo David García Rodríguez</span></li>
 </ul>
 <p class="c8"><span class="c1"></span></p>
