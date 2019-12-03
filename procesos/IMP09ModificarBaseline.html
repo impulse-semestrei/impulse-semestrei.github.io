@@ -1,105 +1,195 @@
-<h1>Modificar Baseline</h1>
-<h3> Propósito </h3>
-<ul>
-    <li>Tener una versión estable del trabajo del proyecto</li>
-    <li>Poder recuperar versiones anteriores</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<h3>Criterios de entrada</h3>
-<ul>
-    <li>Solicitud de cambio con los datos adecuados (ver formato en la <a href="https://docs.google.com/document/d/1xD1JtwF3NZRbLXyBYdYoCAJYjsnUezRxDPs5bP9WAAU/edit" target="_blank">guía</a>)</li>
-    <li>Los miembros del CCB que no tengan alguna emergencia deben estar puntuales y presentes de alguna forma</li>
-</ul>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-<h3> Tabla de especificación</h3>
-<table>
-    <thead>
-        <tr>
-            <td>
-                <h3>Fase</h3>
-            </td>
-            <td>
-                <h3>Pasos</h3>
-            </td>
-            <td>
-                <h3>P.A</h3>
-            </td>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                1.- Revisión
-            </td>
-            <td>
-                <ul>
-                     <li>Revisar que la solicitud de cambio tenga los datos adecuados</li>
-                     <li>Obtener lista de cambios a realizar</li>
-                        <li>
-                            Por cada elemento de la lista:
-                            <ul>
-                                <li>Comprobar que haya sido probado (si aplica) y aprobado</li>
-                                <li>Revisar que las dependencias entre cambios se hayan resuelto adecuadamente</li>
-                            </ul>
-                        </li>
-                        <li>Comprobar los resultados de las pruebas previas a la integración</li>
-                        <li>Revisar cambios con los stakeholders relevantes si es necesario</li>
-                </ul>
-            </td>
-            <td>
-                CM1.3, PMC 1.6, PMC 2.1
-            </td>
-        </tr>
-        <tr>
-            <td>2.- Discusión</td>
-            <td>
-                <ul>
-                    <li>Exponer argumentos a favor y en contra del cambio</li>
-                </ul>
-            </td>
-            <td>CM1.3, PMC 2.2</td>
-        </tr>
-        <tr>
-            <td>3.- Aceptación</td>
-            <td>
-                    <ul>
-                        <li>Votar el cambio</li>
-                        <li>Si la votación fue mayoritaria, el cambio se aprueba. De lo contrario, se documenta en la solicitud de cambio las razones por las que los cambios se rechazaron y se cambia el status de la solicitud a rechazada</li>
-                    </ul>
-            </td>
-            <td>CM1.3, PMC 2.2</td>
-        </tr>
-        <tr>
-            <td>4.- Rezalizar el cambio</td>
-            <td>
-                <ul>
-                    <li>Integrar cambios con la línea base</li>
-                    <li>Cambiar el status de la solicitud de cambio a aprobada</li>
-                    <li>Hacer pruebas de regresión</li>
-                </ul>
-            </td>
-            <td>
-                CM1.3, PMC 1.6
-            </td>
-        </tr>
-    </tbody>
-</table>
+  <title>Impulse</title>
 
-<h3>Resultado</h3>
-<ul>
-    <li>Cambios en la baseline</li>
-    <li>Registro de la aceptación / rechazo del cambio (status del pull request en git)</li>
-</ul>
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
-<h3>Evidencias</h3>
-<ul>
-    <li>
-        Cambios en la baseline y status de las peticiones
-        <ul>
-            <li><a href="https://github.com/impulse-semestrei/Voyager/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed">Vostok</a></li>
-            <li><a href="https://github.com/impulse-semestrei/Vostok/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed">Voyager</a></li>
-            <li><a href="https://github.com/impulse-semestrei/impulse-semestrei.github.io/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed">Impulse</a></li>
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Impulse</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../procesos.html">Procesos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../checklist.html">Checklist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../politicas.html">Políticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../glosario.html">Glosario</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../guias.html">Guías</a>
+          </li>
         </ul>
-    </li>
-</ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../img/background.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Modificar Baseline</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <h3> Propósito </h3>
+        <ul>
+          <li>Tener una versión estable del trabajo del proyecto</li>
+          <li>Tener disponibles versiones anteriores del proyecto</li>
+        </ul>
+
+        <h3>Criterios de entrada</h3>
+        <ul>
+          <li>Tener solicitud de cambio con los datos adecuados con el formato de la <a style="color:blue;" href="../guias/PullRequests.html" target="_blank">Guía para hacer pull requests</a></li>
+          <li>Los miembros del CCB que no tengan alguna emergencia estar puntuales y presentes de alguna forma</li>
+        </ul>
+        <h3> Tabla de especificación</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <td>
+                Fase
+              </td>
+              <td>
+                Pasos
+              </td>
+              <td>
+                P.A
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1.- Revisar
+              </td>
+              <td>
+                <ul>
+                  <li>Revisar que la solicitud de cambio tenga los datos adecuados</li>
+                  <li>Usar la ´guía de <a href="../guias/Guaderedaccin.html">Redacción</a> para verificar la uniformidad de escritura</li>
+                  <li>Obtener lista de cambios a realizar</li>
+                  <li>
+                    Por cada elemento de la lista:
+                    <ul>
+                      <li>Comprobar que haya sido probado (si aplica) y aprobado</li>
+                      <li>Revisar que las dependencias entre cambios se hayan resuelto adecuadamente</li>
+                    </ul>
+                  </li>
+                  <li>Comprobar los resultados de las pruebas previas a la integración</li>
+                  <li>Revisar cambios con los stakeholders relevantes si es necesario</li>
+                </ul>
+              </td>
+              <td>
+                CM1.3<BR>
+                PMC 1.6/2.1<br>
+                VER 3.1<br>
+                VAL 2.1
+              </td>
+            </tr>
+            <tr>
+              <td>2.- Aceptación</td>
+              <td>
+                <ul>
+                  <li>Si la revisión fue exitosa, aprobar los cambios</li>
+                </ul>
+              </td>
+              <td>CM1.3, PMC 2.2</td>
+            </tr>
+            <tr>
+              <td>3.- Rezalizar el cambio</td>
+              <td>
+                <ul>
+                  <li>Integrar cambios con la línea base</li>
+                  <li>Cambiar el status de la solicitud de cambio a aprobada</li>
+                  <li>Hacer pruebas de regresión</li>
+                </ul>
+              </td>
+              <td>
+                CM1.3, PMC 1.6
+              </td>
+            </tr>
+            <tr>
+              <td>3.- Release</td>
+              <td>
+                <ul>
+                  <li>Crear una nueva release siguiendo la guía <a style="color:blue;" href="https://help.github.com/en/github/administering-a-repository/creating-releases">Creating releases</a></li>
+                  <li>Copiar las release notes más recientes en la descripción del release</li>
+                </ul>
+              </td>
+              <td>
+                CM 3.1/1.3<BR>
+                VER 1.3
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Resultado</h3>
+        <ul>
+          <li>Cambios en la baseline</li>
+          <li>Registro de la aceptación / rechazo del cambio (status del pull request en git)</li>
+          <li>Releases en git</li>
+        </ul>
+        <h3>Evidencias</h3>
+        <ul>
+          Estatus de las peticiones de cambio:
+          <li><a href="https://github.com/impulse-semestrei/impulse-semestrei.github.io/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3Amaster">Repositorio de WoW</a></li>
+          <li><a href="https://github.com/impulse-semestrei/Vostok/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3Amaster">Repositorio de Vostok</a></li>
+          <li><a href="https://github.com/impulse-semestrei/Voyager/pulls?utf8=%E2%9C%93&q=is%3Apr+base%3Amaster">Repositorio de Voyager</a></li>
+        </ul>
+        <ul>
+          Cambios en la baseline:
+          <li><a href="https://github.com/impulse-semestrei/impulse-semestrei.github.io/tree/master">Repositorio de WoW</a></li>
+          <li><a href="https://github.com/impulse-semestrei/Vostok/tree/master">Repositorio de Vostok</a></li>
+          <li><a href="https://github.com/impulse-semestrei/Voyager/tree/master">Repositorio de Voyager</a></li>
+        </ul>
+        <ul>
+          Releases:
+          <li><a href="https://github.com/impulse-semestrei/impulse-semestrei.github.io/releases">Repositorio de WoW</a></li>
+          <li><a href="https://github.com/impulse-semestrei/Vostok/releases">Repositorio de Vostok</a></li>
+          <li><a href="https://github.com/impulse-semestrei/Voyager/releases">Repositorio de Voyager</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>

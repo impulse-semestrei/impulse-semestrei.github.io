@@ -1,0 +1,996 @@
+<html>
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+</head>
+<body class="c29"><p class="c24"><span class="c22">&nbsp;</span><span
+        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 109.50px; height: 109.50px;"><img
+        alt="" src="images/image2.jpg"
+        style="width: 109.50px; height: 109.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+        title=""></span><span
+        style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 602.00px; height: 8.00px;"><img
+        alt="" src="images/image1.png"
+        style="width: 602.00px; height: 8.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
+        title="línea horizontal"></span></p>
+<p class="c5"><span class="c26">Guía para hacer pull requests</span></p>
+<p class="c5"><span class="c8">Objetivo</span></p>
+<p class="c5"><span class="c0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+<p class="c5"><span class="c23">Explicar a los integrantes del departamento cómo hacer solicitudes de cambio para los elementos de configuración, con el propósito de </span><span
+        class="c0">prevenir defectos, mejorar la calidad de los productos de trabajo, lograr trazabilidad entre los cambios y permitir la gestión de versiones.</span>
+</p>
+<p class="c5 c12"><span class="c11"></span></p>
+<p class="c5"><span class="c11">Nota:</span></p>
+<p class="c5"><span class="c11">Los cambios a realizar no forzosamente tienen que ser código.</span></p>
+<p class="c5 c12 c20"><span class="c0"></span></p>
+<p class="c5"><span class="c30">Prerrequisitos para hacer una solicitud de cambios</span></p>
+<ol class="c16 lst-kix_h0w30z8z29kv-0 start" start="1">
+    <li class="c13"><span class="c0">Asegúrese de que el trabajo a integrar sea una tarea completa.</span></li>
+    <li class="c13"><span class="c0">Asegúrese de que los cambios cumplan con las checklists de calidad que les corresponda.</span>
+    </li>
+    <li class="c13"><span class="c23">Asegúrese de que el trabajo a subir al nivel controlado sea un elemento de configuración con los siguientes </span><span
+            class="c6"><a class="c15"
+                          href="../checklists/ChecklistConfiguracion.html">criterios</a></span><span
+            class="c0">. </span></li>
+</ol>
+<p class="c5"><span class="c8">Realización de una solicitud de cambio</span></p>
+<ol class="c16 lst-kix_9rz8x1rg4cud-0 start" start="1">
+    <li class="c4"><span class="c0">Añada los cambios</span></li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1 start" start="1">
+    <li class="c5 c7"><span class="c0">Vea los cambios que están en la versión que está editando. &nbsp;Al usar git, emplee el comando &ldquo;git status&rdquo; para ver las modificaciones en su rama.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Obtener otros cambios realizados en el elemento de configuración. En git, obtenga las modificaciones nuevas usando el comando &ldquo;git pull&rdquo;.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Revise los cambios a realizar.</span></li>
+    <li class="c5 c7"><span class="c0">Añada las modificaciones necesarias a la solicitud de cambio. Si está usando git y desea incluir todas las modificaciones dentro de su solicitud, ejecute el comando &ldquo;git add -A&rdquo;. Si hay cambios que no quiera integrar, haga &ldquo;git add &lt;path&gt;&rdquo; por cada uno de las modificaciones a incluir en su solicitud.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Elimine cambios que no sean necesarios. En git, después de incluir las modificaciones ejecute el comando &ldquo;git stash&rdquo; para eliminar los cambios innecesarios de su rama.</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-0" start="2">
+    <li class="c4"><span class="c0">Guarde los cambios en el sistema de manejo de configuración</span></li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1 start" start="1">
+    <li class="c5 c7"><span class="c0">En su solicitud, añada un mensaje que explique los cambios realizados. Si está usando git y las modificaciones son expresables en una sola línea, use el comando &ldquo;git commit -m &lt;mensaje&gt;&rdquo;. Si hizo una gran cantidad de cambios que no son enunciables en una sola línea, haga un listado de las modificaciones con el comando &ldquo;git commit&rdquo;(sin el &ldquo;-m&rdquo;) para abrir un editor de texto. </span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-2 start" start="1">
+    <li class="c3"><span class="c0">Dentro del editor, utilice la primera línea para escribir el asunto del cambio. El asunto debe contener un verbo en infinitivo y un resumen de las modificaciones.</span>
+    </li>
+    <li class="c3"><span class="c0">Escriba a continuación cada uno de los cambios en bullet points de manera más específica.</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1" start="2">
+    <li class="c5 c7"><span class="c23">Publique</span><span class="c0">&nbsp;los cambios al sistema de manejo de configuración. Si está usando git, ejecute el comando &ldquo;git push origin &lt;su_rama&gt;&rdquo;.</span>
+    </li>
+    <li class="c5 c7"><span class="c0">Obtenga la última versión del nivel controlado del sistema de configuración. Si está usando git, ejecute el comando &ldquo;git pull origin &lt;rama a la que desee integrar&gt;&rdquo;. Realice luego lo siguiente:</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-2 start" start="1">
+    <li class="c3"><span class="c0">Si hay conflictos, resuélvalos.</span></li>
+    <li class="c3"><span class="c0">Añada los cambios realizados. Si está en git, ejecute el comando &ldquo;git add -A&rdquo;.</span>
+    </li>
+    <li class="c3"><span class="c0">Añada un mensaje que explique los cambios. En git, ejecute el comando &ldquo; git commit -m &lsquo;arregle conflictos&rsquo; &nbsp;&rdquo;.</span>
+    </li>
+</ol>
+<ol class="c16 lst-kix_9rz8x1rg4cud-1" start="4">
+    <li class="c5 c7"><span class="c23">Publique</span><span class="c0">&nbsp;los cambios en el sistema de manejo de configuración. En git, ejecute el comando &ldquo;git push origin &lt;su_rama&gt;&rdquo;.</span>
+    </li>
+</ol>
+<p class="c5 c12"><span class="c0"></span></p>
+<p class="c5"><span class="c0">Haga una solicitud de cambio.</span></p>
+<p class="c5"><span class="c0">Si está usando git, haga lo siguiente:</span></p>
+<ol class="c16 lst-kix_psqzyxq95y3b-0 start" start="1">
+    <li class="c4"><span class="c0">Abra en el navegador el repositorio de github correspondiente.</span></li>
+    <li class="c4"><span class="c0">Diríjase a &nbsp;la pestaña de &ldquo;Pull Requests&rdquo;.</span>
+    </li>
+    <li class="c4"><span class="c0">De clic en el botón &ldquo;New pull request&rdquo;.</span></li>
+    <li class="c4"><span class="c0">Deje la rama a integrar con los cambios como rama base y ponga como rama de comparación la rama que contenga los cambios.</span>
+    </li>
+    <li class="c4"><span class="c0">De clic al botón &ldquo;Create new pull request&rdquo;.</span></li>
+    <li class="c4"><span class="c0">Revise que el nombre del pull request sea el correcto.</span></li>
+    <li class="c4"><span class="c0">Haga un listado de todos los cambios a aplicar en el cuerpo del pull request.</span>
+    </li>
+    <li class="c4"><span class="c0">De click en el apartado de Reviewers del lado derecho de la página</span>
+    </li>
+    <li class="c4"><span class="c0">Escoja a un reviewer</span></li>
+</ol>
+<ol class="c16 lst-kix_psqzyxq95y3b-1 start" start="1">
+    <li class="c5 c7"><span class="c0">Si no sabe a quién escoger, utilice el inventario de habilidades para encontrar a un reviewer adecuado.</span>
+    </li>
+    <li class="c5 c7"><span
+            class="c0">Si integra a master, incluya como reviewers a los integrantes del CCB.</span></li>
+</ol>
+<ol class="c16 lst-kix_psqzyxq95y3b-0" start="10">
+    <li class="c4"><span class="c0">De clic en el botón &ldquo;Create pull request&rdquo;.</span></li>
+</ol>
+<p class="c5 c12"><span class="c0"></span></p>
+<p class="c12 c17"><span class="c28"></span></p>
+<p class="c5 c12"><span class="c14"></span></p></body>
+
+<style type="text/css">@import url('https://themes.googleusercontent.com/fonts/css?kit=iMc4-4exjgqA-toZgqqJBccUMOoWrB6oRHLwLDi6Oi1VXI8NDDNQSrGMtKvat7PJ_kmCvy597kDopqFAXvpeaA');
+
+ol.lst-kix_psqzyxq95y3b-7.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-7 0
+}
+
+.lst-kix_9rz8x1rg4cud-5 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-5
+}
+
+.lst-kix_h0w30z8z29kv-3 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-3
+}
+
+.lst-kix_psqzyxq95y3b-2 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-2
+}
+
+.lst-kix_9rz8x1rg4cud-6 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-6
+}
+
+.lst-kix_h0w30z8z29kv-7 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-7, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-4 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-4
+}
+
+.lst-kix_h0w30z8z29kv-8 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-8, lower-roman) ". "
+}
+
+ul.lst-kix_r81whipdrqk3-2 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-1 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-4 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-5.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-5 0
+}
+
+ul.lst-kix_r81whipdrqk3-6 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-5 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-8 {
+    list-style-type: none
+}
+
+ul.lst-kix_r81whipdrqk3-7 {
+    list-style-type: none
+}
+
+.lst-kix_h0w30z8z29kv-1 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-1
+}
+
+ol.lst-kix_9rz8x1rg4cud-2.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-2 0
+}
+
+ul.lst-kix_r81whipdrqk3-0 {
+    list-style-type: none
+}
+
+.lst-kix_r81whipdrqk3-7 > li:before {
+    content: "\0025cb  "
+}
+
+.lst-kix_r81whipdrqk3-6 > li:before {
+    content: "\0025cf  "
+}
+
+.lst-kix_r81whipdrqk3-4 > li:before {
+    content: "\0025cb  "
+}
+
+ol.lst-kix_h0w30z8z29kv-5.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-5 0
+}
+
+.lst-kix_r81whipdrqk3-5 > li:before {
+    content: "\0025a0  "
+}
+
+.lst-kix_r81whipdrqk3-2 > li:before {
+    content: "\0025a0  "
+}
+
+ol.lst-kix_9rz8x1rg4cud-8.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-8 0
+}
+
+.lst-kix_r81whipdrqk3-3 > li:before {
+    content: "\0025cf  "
+}
+
+.lst-kix_psqzyxq95y3b-1 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-1
+}
+
+ol.lst-kix_h0w30z8z29kv-2.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-2 0
+}
+
+ol.lst-kix_9rz8x1rg4cud-6.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-6 0
+}
+
+.lst-kix_9rz8x1rg4cud-2 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-2
+}
+
+.lst-kix_psqzyxq95y3b-4 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-4
+}
+
+ol.lst-kix_h0w30z8z29kv-8.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-8 0
+}
+
+ol.lst-kix_psqzyxq95y3b-7 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-8 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-5 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-6 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-4 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-1 {
+    list-style-type: none
+}
+
+ol.lst-kix_psqzyxq95y3b-2 {
+    list-style-type: none
+}
+
+.lst-kix_r81whipdrqk3-8 > li:before {
+    content: "\0025a0  "
+}
+
+ol.lst-kix_psqzyxq95y3b-5.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-5 0
+}
+
+ol.lst-kix_h0w30z8z29kv-1.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-1 0
+}
+
+.lst-kix_9rz8x1rg4cud-3 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-3
+}
+
+.lst-kix_9rz8x1rg4cud-8 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-8, lower-roman) ". "
+}
+
+ol.lst-kix_9rz8x1rg4cud-0.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-0 0
+}
+
+.lst-kix_9rz8x1rg4cud-7 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-7, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-1 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-1, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-3 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-3, decimal) ". "
+}
+
+.lst-kix_psqzyxq95y3b-3 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-3
+}
+
+.lst-kix_h0w30z8z29kv-2 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-2, lower-roman) ". "
+}
+
+.lst-kix_h0w30z8z29kv-6 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-6, decimal) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-5 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-5, lower-roman) ". "
+}
+
+ol.lst-kix_9rz8x1rg4cud-7.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-7 0
+}
+
+.lst-kix_psqzyxq95y3b-0 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-0
+}
+
+.lst-kix_h0w30z8z29kv-5 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-5, lower-roman) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-6 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-6, decimal) ". "
+}
+
+ol.lst-kix_h0w30z8z29kv-0.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-0 0
+}
+
+.lst-kix_h0w30z8z29kv-4 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-4, lower-latin) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-0 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-0, decimal) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-1 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-1, lower-latin) ". "
+}
+
+.lst-kix_h0w30z8z29kv-2 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-2
+}
+
+.lst-kix_h0w30z8z29kv-5 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-5
+}
+
+.lst-kix_9rz8x1rg4cud-4 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-4, lower-latin) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-3 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-3, decimal) ". "
+}
+
+ol.lst-kix_h0w30z8z29kv-7.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-7 0
+}
+
+.lst-kix_9rz8x1rg4cud-2 > li:before {
+    content: "" counter(lst-ctn-kix_9rz8x1rg4cud-2, lower-roman) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-4.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-4 0
+}
+
+.lst-kix_h0w30z8z29kv-0 > li:before {
+    content: "" counter(lst-ctn-kix_h0w30z8z29kv-0, decimal) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-0.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-0 0
+}
+
+.lst-kix_psqzyxq95y3b-7 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-7
+}
+
+ol.lst-kix_h0w30z8z29kv-3.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-3 0
+}
+
+ol.lst-kix_9rz8x1rg4cud-1.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-1 0
+}
+
+ol.lst-kix_h0w30z8z29kv-0 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-2 {
+    list-style-type: none
+}
+
+.lst-kix_h0w30z8z29kv-8 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-8
+}
+
+ol.lst-kix_h0w30z8z29kv-1 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-4 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-6.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-6 0
+}
+
+ol.lst-kix_psqzyxq95y3b-3.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-3 0
+}
+
+.lst-kix_psqzyxq95y3b-6 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-6
+}
+
+.lst-kix_9rz8x1rg4cud-0 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-0
+}
+
+ol.lst-kix_9rz8x1rg4cud-4.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-4 0
+}
+
+.lst-kix_psqzyxq95y3b-5 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-5, lower-roman) ". "
+}
+
+.lst-kix_psqzyxq95y3b-6 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-6, decimal) ". "
+}
+
+.lst-kix_psqzyxq95y3b-2 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-2, lower-roman) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-6.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-6 0
+}
+
+.lst-kix_psqzyxq95y3b-3 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-3, decimal) ". "
+}
+
+.lst-kix_psqzyxq95y3b-4 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-4, lower-latin) ". "
+}
+
+ol.lst-kix_psqzyxq95y3b-0 {
+    list-style-type: none
+}
+
+.lst-kix_psqzyxq95y3b-1 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-1, lower-latin) ". "
+}
+
+.lst-kix_psqzyxq95y3b-0 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-0, decimal) ". "
+}
+
+.lst-kix_9rz8x1rg4cud-8 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-8
+}
+
+ol.lst-kix_9rz8x1rg4cud-1 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-0 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-3 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-2 {
+    list-style-type: none
+}
+
+.lst-kix_r81whipdrqk3-0 > li:before {
+    content: "\0025cf  "
+}
+
+.lst-kix_r81whipdrqk3-1 > li:before {
+    content: "\0025cb  "
+}
+
+.lst-kix_h0w30z8z29kv-6 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-6
+}
+
+ol.lst-kix_psqzyxq95y3b-2.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-2 0
+}
+
+.lst-kix_h0w30z8z29kv-0 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-0
+}
+
+.lst-kix_9rz8x1rg4cud-7 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-7
+}
+
+ol.lst-kix_psqzyxq95y3b-8.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-8 0
+}
+
+.lst-kix_psqzyxq95y3b-7 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-7, lower-latin) ". "
+}
+
+.lst-kix_psqzyxq95y3b-8 > li:before {
+    content: "" counter(lst-ctn-kix_psqzyxq95y3b-8, lower-roman) ". "
+}
+
+.lst-kix_h0w30z8z29kv-7 > li {
+    counter-increment: lst-ctn-kix_h0w30z8z29kv-7
+}
+
+ol.lst-kix_psqzyxq95y3b-1.start {
+    counter-reset: lst-ctn-kix_psqzyxq95y3b-1 0
+}
+
+ol.lst-kix_h0w30z8z29kv-4.start {
+    counter-reset: lst-ctn-kix_h0w30z8z29kv-4 0
+}
+
+.lst-kix_9rz8x1rg4cud-4 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-4
+}
+
+.lst-kix_psqzyxq95y3b-5 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-5
+}
+
+ol.lst-kix_h0w30z8z29kv-6 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-5 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-8 {
+    list-style-type: none
+}
+
+ol.lst-kix_h0w30z8z29kv-7 {
+    list-style-type: none
+}
+
+.lst-kix_psqzyxq95y3b-8 > li {
+    counter-increment: lst-ctn-kix_psqzyxq95y3b-8
+}
+
+.lst-kix_9rz8x1rg4cud-1 > li {
+    counter-increment: lst-ctn-kix_9rz8x1rg4cud-1
+}
+
+ol.lst-kix_9rz8x1rg4cud-3.start {
+    counter-reset: lst-ctn-kix_9rz8x1rg4cud-3 0
+}
+
+ol.lst-kix_9rz8x1rg4cud-8 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-5 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-4 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-7 {
+    list-style-type: none
+}
+
+ol.lst-kix_9rz8x1rg4cud-6 {
+    list-style-type: none
+}
+
+ol {
+    margin: 0;
+    padding: 0
+}
+
+table td, table th {
+    padding: 0
+}
+
+.c9 {
+    border-right-style: solid;
+    padding: 5pt 5pt 5pt 5pt;
+    border-bottom-color: #000000;
+    border-top-width: 1pt;
+    border-right-width: 1pt;
+    border-left-color: #000000;
+    vertical-align: top;
+    border-right-color: #000000;
+    border-left-width: 1pt;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 1pt;
+    width: 112.9pt;
+    border-top-color: #000000;
+    border-bottom-style: solid
+}
+
+.c4 {
+    margin-left: 36pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c13 {
+    margin-left: 36pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: justify
+}
+
+.c3 {
+    margin-left: 108pt;
+    padding-top: 0pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c0 {
+    color: #666666;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c1 {
+    color: #695d46;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c8 {
+    color: #ff470e;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 18pt;
+    font-family: "PT Sans Narrow";
+    font-style: normal
+}
+
+.c28 {
+    color: #695d46;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 14pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c11 {
+    color: #666666;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c21 {
+    color: #695d46;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Open Sans";
+    font-style: normal
+}
+
+.c14 {
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 11pt;
+    font-family: "Arial";
+    font-style: normal
+}
+
+.c6 {
+    -webkit-text-decoration-skip: none;
+    color: #1155cc;
+    font-weight: 400;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-family: "Open Sans"
+}
+
+.c18 {
+    -webkit-text-decoration-skip: none;
+    color: #1155cc;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-family: "Open Sans"
+}
+
+.c25 {
+    padding-top: 6pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c5 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.15;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c24 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.c17 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.2;
+    orphans: 2;
+    widows: 2;
+    text-align: justify
+}
+
+.c30 {
+    font-size: 18pt;
+    font-family: "PT Sans Narrow";
+    color: #ff470e;
+    font-weight: 700
+}
+
+.c26 {
+    font-size: 42pt;
+    font-family: "PT Sans Narrow";
+    color: #695d46;
+    font-weight: 700
+}
+
+.c27 {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-right: auto
+}
+
+.c22 {
+    font-size: 12pt;
+    font-family: "Open Sans";
+    color: #695d46;
+    font-weight: 400
+}
+
+.c10 {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.0;
+    text-align: left
+}
+
+.c29 {
+    background-color: #ffffff;
+    max-width: 451.4pt;
+    padding: 72pt 72pt 72pt 72pt
+}
+
+.c23 {
+    font-family: "Open Sans";
+    color: #666666;
+    font-weight: 400
+}
+
+.c19 {
+    font-family: "Open Sans";
+    color: #695d46;
+    font-weight: 700
+}
+
+.c15 {
+    color: inherit;
+    text-decoration: inherit
+}
+
+.c7 {
+    margin-left: 72pt;
+    padding-left: 0pt
+}
+
+.c16 {
+    padding: 0;
+    margin: 0
+}
+
+.c20 {
+    margin-left: 36pt
+}
+
+.c12 {
+    height: 11pt
+}
+
+.c2 {
+    height: 0pt
+}
+
+.title {
+    padding-top: 0pt;
+    color: #000000;
+    font-size: 26pt;
+    padding-bottom: 3pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+.subtitle {
+    padding-top: 0pt;
+    color: #666666;
+    font-size: 15pt;
+    padding-bottom: 16pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+li {
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+p {
+    margin: 0;
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+h1 {
+    padding-top: 20pt;
+    color: #000000;
+    font-size: 20pt;
+    padding-bottom: 6pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h2 {
+    padding-top: 18pt;
+    color: #000000;
+    font-size: 16pt;
+    padding-bottom: 6pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h3 {
+    padding-top: 16pt;
+    color: #434343;
+    font-size: 14pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h4 {
+    padding-top: 14pt;
+    color: #666666;
+    font-size: 12pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h5 {
+    padding-top: 12pt;
+    color: #666666;
+    font-size: 11pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}
+
+h6 {
+    padding-top: 12pt;
+    color: #666666;
+    font-size: 11pt;
+    padding-bottom: 4pt;
+    font-family: "Arial";
+    line-height: 1.15;
+    page-break-after: avoid;
+    font-style: italic;
+    orphans: 2;
+    widows: 2;
+    text-align: left
+}</style>
+</html>
